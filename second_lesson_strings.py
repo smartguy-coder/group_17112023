@@ -31,6 +31,8 @@
 # print(poem, another_string, sep='_______', end='***')
 # print('pppppp')
 
+# some comment
+
 city_slogan = "         i ❤ odesa"
 # city_slogan = city_slogan.strip().title().capitalize()
 city_slogan = city_slogan.strip().title()
@@ -58,6 +60,8 @@ print(chr(43))
 print("aa" == "A")
 # print('555' > '1000')
 # print('aa' < 'A')
+
+print('---------------------------------')
 
 print(some_string.startswith("56H"))
 print(some_string.endswith(" ß"))
