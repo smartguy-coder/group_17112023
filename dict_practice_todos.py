@@ -40,5 +40,20 @@ for todo in todos:
     #     print(todo)
 
     # get all todos of the user above #13 include #13
-    if todo['userId'] >= 13:
-        print(todo)
+    # if todo['userId'] >= 13:
+    #     print(todo)
+
+    # if ' cat' in todo['todo']:
+    #     print(todo)
+
+    task = todo['todo']
+    task_lower_for_checking = task.lower()
+
+    if 'plan' in task_lower_for_checking:
+        print('I plan >>', task)
+    elif ' cat' in task_lower_for_checking:
+        print('I care about cats ~~~', task)
+    elif 'organize ' in task_lower_for_checking:
+        print('I Organize ', task)
+    else:
+        print('*-*')
