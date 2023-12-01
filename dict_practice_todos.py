@@ -1,3 +1,5 @@
+from pprint import pprint
+
 import requests
 
 url_todos = 'https://dummyjson.com/todos/'
@@ -8,4 +10,9 @@ response = requests.get(url=url_todos)
 # print(response.text)
 data_from_net = response.json()
 
-print(data_from_net)
+todos = data_from_net['todos']
+
+for todo in todos:
+    print(todo)
+
+
