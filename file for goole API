@@ -1,0 +1,17 @@
+function doGet(req) {
+  var doc = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = doc.getSheetByName('product');
+  var values = sheet.getDataRange().getValues();
+
+  var output = [];
+  for(var i = 1; i<values.length; i++){
+    var row = {};
+    row['id'] = values[i][0];
+    row['title'] = values[i][1];
+    row['price'] = values[i][2];
+    row['quantity'] = values[i][3];
+    row['contains_gluten'] = values[i][4];
+    output.push(row);
+  }
+  return ContentService.createTextOutput(JSON.stringify({purchase: output, count: output.length})).setMimeType(ContentService.MimeType.JSON);
+}
