@@ -9,7 +9,8 @@ data = {
     'hobbies': [
         'soccer',
         'tennis',
-    ]
+        'jogging',
+    ],
 }
 
 # json_string = json.dumps(data)
@@ -20,11 +21,16 @@ data = {
 # pprint(data_from_json)
 
 
-with open('data.json', mode='w') as file:
-    # json.dump(data, file)
-    json.dump(data, file, indent=4)
+# with open('data.json', mode='w') as file:
+#     # json.dump(data, file)
+#     json.dump(data, file, indent=4)
 
 
+with open('data.json', mode='r') as file:
+    data_from_file = json.load(file)
+    file.read()
+file.read()
+print(data_from_file)
 
 
 
