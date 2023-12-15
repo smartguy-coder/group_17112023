@@ -8,3 +8,7 @@ def main():
         base=age,
     )
     print(f'You get {candies} candies')
+
+
+if __name__ == '__main__':
+    main()
