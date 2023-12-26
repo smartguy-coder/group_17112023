@@ -58,10 +58,10 @@ def mult_4(number: int) -> float:
 def get_number_str(number: int) -> str:
     return str(number) * 3
 
-
-mult_3 = james_bond(mult_3)
-mult_4 = james_bond(mult_4)
-get_number_str = james_bond(get_number_str)
+#
+# mult_3 = james_bond(mult_3)
+# mult_4 = james_bond(mult_4)
+# get_number_str = james_bond(get_number_str)
 
 # power_number_to_number = james_bond(power_number_to_number)
 # print(mult_3)
@@ -71,3 +71,6 @@ get_number_str = james_bond(get_number_str)
 # mult_4(40)
 data = power_number_to_number(power=9, base=5)
 print(data)
+
+
+
